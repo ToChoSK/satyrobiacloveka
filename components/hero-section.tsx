@@ -120,14 +120,14 @@ export function HeroSection() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="absolute -right-4 top-1/4 bg-card border border-border p-4 rounded-xl shadow-2xl"
+              className="absolute right-2 md:right-0 lg:-right-4 top-8 md:top-1/4 bg-card border border-border p-3 md:p-4 rounded-xl shadow-2xl max-w-[180px] md:max-w-none"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Sparkles className="text-primary" size={20} />
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="text-primary" size={16} />
                 </div>
-                <div>
-                  <div className="text-sm font-bold text-foreground">Osobný prístup</div>
+                <div className="min-w-0">
+                  <div className="text-xs md:text-sm font-bold text-foreground">Osobný prístup</div>
                   <div className="text-xs text-muted-foreground">100% individuálne</div>
                 </div>
               </div>
@@ -138,10 +138,10 @@ export function HeroSection() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="absolute -left-4 bottom-1/4 bg-primary text-primary-foreground p-4 rounded-xl"
+              className="absolute left-2 md:left-0 lg:-left-4 bottom-8 md:bottom-1/4 bg-primary text-primary-foreground p-3 md:p-4 rounded-xl"
             >
-              <div className="font-mono text-sm font-bold">{"<style>"}</div>
-              <div className="font-mono text-xs opacity-80">upgrade.complete()</div>
+              <div className="font-mono text-xs md:text-sm font-bold">{"<style>"}</div>
+              <div className="font-mono text-xs opacity-80 whitespace-nowrap">upgrade.complete()</div>
             </motion.div>
           </motion.div>
         </div>
